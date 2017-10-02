@@ -1,0 +1,259 @@
+/* CSS Document */
+
+html{
+	height:100%;
+}
+
+body{
+	height:100%;	
+}
+
+.header{
+	width: 100%;
+	background-image: url(asssets/shutterstock_130285502.jpg);
+	background-size: cover;
+	background-position: 0% 106%;
+	background-repeat:no-repeat;
+}
+
+.header img:hover{
+	background-image: url(asssets/iStock_000013234708_Small.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: 0% 95%;
+	transition:linear 400ms;
+}
+
+.header img{
+	width:100%;	
+}
+
+.menuBar td{
+	width: 20%;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.menuBar{
+	background-color: #DB9D40;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: large;
+}
+
+.menuBar a{
+	text-decoration:none;		
+}
+
+
+.menuBar a:hover{
+	text-decoration: underline;
+	background-color: #FFDEA0;
+	color: #000000;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	border-radius:8px;
+	font-size:20px;
+}
+
+.content{
+	height:100%;
+	width:100%;
+	clear:both;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;	
+}
+
+.footer{
+	width: 100%;
+	background-color: #64503B;
+	border: thick double #0C7312;
+	text-align: center;
+	font-size: small;
+	font-weight: bold;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	color: #FFFFFF;
+	clear: both;
+}
+
+.aside{
+	height: 100%;
+	float: right;
+	clear: none;
+	width: 22%;
+	min-width: 120px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-align: right;
+	background-color: #FFDEA0;
+	font-style: italic;
+	font-variant: small-caps;
+	font-weight: bolder;
+	font-size: 14pt;
+	border-bottom: medium solid #64503B;
+	border-left: medium solid #64503B;
+}
+
+.mainC{
+	height:100%;
+	float:left;
+	clear:none;
+	width: 75%;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;		
+}
+.sectionCW{
+	width: 45%;
+	float: left;
+	padding-top: 10;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10;
+}
+.sectionCWSmall{
+	width: 25%;
+	float: left;
+	padding-top: 10;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10;
+}
+.sectionCWMain{
+	width: 48%;
+	float: right;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.aside li{
+	list-style-type: none;
+	list-style-image: none;
+	margin-top: 30px;
+	padding-right: 10px;
+}
+
+.aside li a:hover{
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	color: #000000;
+	background-color:#DB9D40;
+	border-radius:7px;
+	font-size:20px;
+}
+
+
+
+.mobile{
+	display:none;
+}
+
+.mainC p{
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: top;
+	float: left;
+	clear: both;
+}
+
+.mainC table{
+	width: 138%;
+	border: thin solid #64503B;
+	border-radius: 8px;
+	background-color: #E0E0E0;
+}
+
+
+#ContentPicture{
+	width: 35%;
+	border: thin solid #64503B;
+	padding-top: 4px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+	padding-left: 4px;
+	background-color: #FFDEA0;
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+	min-width:200px;
+}
+
+#information{
+	width:75%;	
+}
+
+#icon{
+	width: 30px;
+	margin: 5px;
+	border: thin solid #000000;
+}
+
+
+@media screen and (max-width:480px){
+	.Jesus{
+		display:none;	
+	}
+	
+	.header{
+		display:none;	
+	}
+	.mobile{
+		display:inherit;
+		width:100%;
+	}
+	.mobile a img{
+		width:100%;	
+	}
+	.menuBar{
+		float:right;
+		width:100%;
+		align-content:center;
+		text-align:center;	
+	}
+	
+	.menuBar td{
+		font-size:14px;
+		width:100%;
+		clear:both;
+		align-content:center;
+		float:right;
+	}
+	
+	.aside{
+	font-size: 12px;
+	clear: both;
+	width: 100%;
+	text-align: center;
+	border-top: medium solid #64503B;
+	border-right: medium solid #64503B;
+	}
+	.mainC table{
+		width:175%;	
+	}
+	.sectionCW{
+		width:100%;
+		padding:5px;	
+	}
+	.sectionCWMain{
+		width:100%;
+		padding: 5px;	
+	}
+	.sectionCWSmall{
+		width:100%;
+		padding:5px;	
+	}	
+}
+
+
+
+@media screen and (min-width:481px) and (max-width:1224px){
+	.sectionCWSmall{
+		width:46%	
+	}
+}
+
+@media screen and (min-width:1225px){
+	.sectionCWSmall{
+		width:23%;	
+	}
+}
